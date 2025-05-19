@@ -12,6 +12,6 @@ public class Deck {
                 cards.add(new Card(j, i));
             }
         }
-        Collections.shuffle(cards);
+        Collections.shuffle(cards); //whats this vro
     }
 }
