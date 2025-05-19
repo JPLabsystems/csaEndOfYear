@@ -1,7 +1,7 @@
 public class Card
 {
     private int value;
-    private int faceValue
+    private int faceValue;
     private String name;
 
     /*
