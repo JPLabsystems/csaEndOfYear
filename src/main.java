@@ -5,6 +5,8 @@ public class main {
     {
         System.out.println("Hello World!");
         System.out.println("JAVA END OF YEAR!");
-        System.out.println("Justinas is my pookie!");
+        Card testCard = new Card(0, 0);
+        Deck testDeck = new Deck();
     }
 }
+
