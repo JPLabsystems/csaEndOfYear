@@ -31,4 +31,9 @@ public class Card
                 break;
         }
     }
+
+    public String printCard()
+    {
+        return "" + name + " of " + value;
+    }
 }

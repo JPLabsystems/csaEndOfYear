@@ -14,4 +14,13 @@ public class Deck {
         }
         Collections.shuffle(cards); //whats this vro
     }
+
+    public void printDeck()
+    {
+        for(int i = 0; i < cards.size(); i++)
+        {
+            System.out.printf("Card %d is a %s\n", i + 1,  cards.get(i).printCard());
+        }
+    }
+
 }
