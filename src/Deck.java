@@ -14,7 +14,4 @@ public class Deck {
         }
         Collections.shuffle(cards); //whats this vro
     }
-    public static void draw() {
-
-    }
 }

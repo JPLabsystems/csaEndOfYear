@@ -5,10 +5,12 @@ public class main {
     {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Hello World!");
+//        System.out.println("Hello World!");
         System.out.println("JAVA END OF YEAR!");
 
         Deck testDeck = new Deck();
+
+        testDeck.printDeck();
     }
 }
 

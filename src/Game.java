@@ -11,6 +11,11 @@ public class Game {
     public void startGame() {
         // reset the deck
         // Initiate the number of players
-
     }
+//
+//    public void move(Player p)
+//    {
+//
+//    }
+//
 }

@@ -1,6 +1,7 @@
 public class Card
 {
     private int value;
+    private String valueString;
     private int faceValue;
     private String name;
 
@@ -15,6 +16,25 @@ public class Card
     public Card(int v, int n)
     {
         value = v;
+        switch (v){
+            case 1:
+                valueString = "ace";
+                break;
+            case 11:
+                valueString = "jack";
+                break;
+            case 12:
+                valueString = "queen";
+                break;
+            case 13:
+                valueString = "king";
+                break;
+            default:
+                valueString =  String.valueOf(v);
+                break;
+        }
+
+
         faceValue = n;
         switch (n) {
             case 0:
@@ -30,5 +50,10 @@ public class Card
                 name = "hearts";
                 break;
         }
+    }
+
+    public String printCard()
+    {
+        return "" + valueString + " of " + name;
     }
 }
