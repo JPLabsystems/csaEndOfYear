@@ -19,7 +19,7 @@ public class Deck {
     {
         for(int i = 0; i <cards.size(); i++)
         {
-            System.out.printf("Card %d is a %s", i+1, i++);
+            System.out.printf("Card %d is a %s\n", i+1, cards.get(i).printCard());
         }
     }
 
