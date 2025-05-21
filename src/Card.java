@@ -1,10 +1,10 @@
 public class Card
 {
     private int value;
-    private int actualValue;
+    private int gameValue;
     private String valueString;
-    private int faceValue;
-    private String name;
+    private int suitValue;
+    private String suit;
 
     /*
     values:
@@ -23,16 +23,16 @@ public class Card
                 break;
             case 11:
                 valueString = "jack";
-                actualValue = 10;
+                gameValue = 10;
                 break;
             case 12:
                 valueString = "queen";
-                actualValue = 10;
+                gameValue = 10;
 
                 break;
             case 13:
                 valueString = "king";
-                actualValue = 10;
+                gameValue = 10;
 
                 break;
             default:
@@ -41,25 +41,25 @@ public class Card
         }
 
 
-        faceValue = n;
+        suitValue = n;
         switch (n) {
             case 0:
-                name = "spades";
+                suit = "spades";
                 break;
             case 1:
-                name = "clubs";
+                suit = "clubs";
                 break;
             case 2:
-                name = "diamonds";
+                suit = "diamonds";
                 break;
             case 3:
-                name = "hearts";
+                suit = "hearts";
                 break;
         }
     }
 
     public String printCard()
     {
-        return "" + valueString + " of " + name;
+        return "" + valueString + " of " + suit;
     }
 }

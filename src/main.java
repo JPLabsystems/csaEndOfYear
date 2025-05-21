@@ -16,6 +16,11 @@ public class main {
 
         Game testGame = new Game(numPlayers);
 
+        while(testGame.getStatus())
+        {
+
+        }
+
 
 
     }
