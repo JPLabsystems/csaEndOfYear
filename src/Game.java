@@ -2,10 +2,12 @@ public class Game {
 
     private int numPlayers;
     private boolean gamePlaying = true;
-    
+
+    private Deck cardDeck;
 
     public Game(int num) {
         numPlayers = num;
+        cardDeck = new Deck();
     }
 
     public void startGame() {

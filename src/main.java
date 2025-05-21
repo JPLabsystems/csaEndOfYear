@@ -8,7 +8,6 @@ public class main {
 //        System.out.println("Hello World!");
         System.out.println("JAVA END OF YEAR!");
 
-        Deck testDeck = new Deck();
 
     }
 }
