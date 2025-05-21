@@ -14,11 +14,17 @@ public class Game {
         players = new Player[numPlayers];
         for(int i = 0; i < players.length; i++)
         {
-            players[i] = new Player(String.valueOf(i+1), this)
+            players[i] = new Player(String.valueOf(i+1), this);
         }
 
 
         startGame();
+    }
+
+    public void changePlayer() {
+        if (playerIndex == numPlayers)
+            playerIndex = -1;
+        playerIndex += 1;
     }
 
     public void startGame() {

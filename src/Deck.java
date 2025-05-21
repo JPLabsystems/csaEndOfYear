@@ -29,6 +29,7 @@ public class Deck {
 
     public void draw() {
         System.out.println(cards.get(0));
+        // Add value of card to player
 
         cards.remove(0);
     }

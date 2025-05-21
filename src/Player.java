@@ -27,9 +27,9 @@ public class Player {
     }
 
     class Dealer extends Player {
-        public Dealer(String n) {
+        public Dealer(String n, String g) {
             super(n);
         }
-
     }
+
 }
