@@ -6,17 +6,19 @@ public class Game {
     private int playerIndex = 0;
     public Deck cardDeck;
 
+    private Player dealer;
+
     public Game(int num) {
         numPlayers = num;
         cardDeck = new Deck();
-        gamePlaying = true;
 
         players = new Player[numPlayers];
         for(int i = 0; i < players.length; i++)
         {
-            players[i] = new Player(String.valueOf(i+1), this)
+            players[i] = new Player(String.valueOf(i+1), this);
         }
 
+        dealer = new Dealer("DEALER", this);
 
         startGame();
     }
@@ -31,6 +33,15 @@ public class Game {
         return gamePlaying;
     }
 
+    public void play()
+    {
+
+    }
+
+    public Card getACard()
+    {
+        return cardDeck.draw();
+    }
 
 //
 //    public void move(Player p)

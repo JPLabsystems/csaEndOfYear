@@ -18,7 +18,7 @@ public class main {
 
         while(testGame.getStatus())
         {
-
+            testGame.play();
         }
 
 
