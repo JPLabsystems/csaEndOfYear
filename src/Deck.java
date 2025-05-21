@@ -23,6 +23,11 @@ public class Deck {
         }
     }
 
-    public static void draw()
-    {}
+    public String toString() {
+        return "";
+    }
+
+    public void draw() {
+        System.out.println(cards.get(1));
+    }
 }
