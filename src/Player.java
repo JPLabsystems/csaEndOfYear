@@ -3,13 +3,15 @@ public class Player {
     private int playerNumber;
     private String playerName;
 
-    public Player(String n) {
+    private Game thisGame;
+
+    public Player(String n, Game g) {
         playerNumber = 0;
         playerName = n;
     }
 
     public void hit() {
-        Deck.draw();
+//        cardDeck.draw();
     }
 
     public void stay() {
