@@ -1,6 +1,7 @@
 public class Card
 {
     private int value;
+    private int actualValue;
     private String valueString;
     private int faceValue;
     private String name;
@@ -22,12 +23,17 @@ public class Card
                 break;
             case 11:
                 valueString = "jack";
+                actualValue = 10;
                 break;
             case 12:
                 valueString = "queen";
+                actualValue = 10;
+
                 break;
             case 13:
                 valueString = "king";
+                actualValue = 10;
+
                 break;
             default:
                 valueString =  String.valueOf(v);
