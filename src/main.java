@@ -10,7 +10,6 @@ public class main {
 
         Deck testDeck = new Deck();
 
-        testDeck.printDeck();
     }
 }
 
