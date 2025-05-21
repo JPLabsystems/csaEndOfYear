@@ -27,10 +27,10 @@ public class Deck {
         return "";
     }
 
-    public void draw() {
+    public Card draw() {
         System.out.println(cards.get(0));
         // Add value of card to player
 
-        cards.remove(0);
+        return cards.remove(0);
     }
 }
