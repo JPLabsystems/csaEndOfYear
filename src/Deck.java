@@ -28,6 +28,8 @@ public class Deck {
     }
 
     public void draw() {
-        System.out.println(cards.get(1));
+        System.out.println(cards.get(0));
+
+        cards.remove(0);
     }
 }

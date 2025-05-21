@@ -16,6 +16,14 @@ public class Player {
 
     }
 
+    public int getPlayerNumber() {
+        return playerNumber;
+    }
+
+    public void setPlayerNumber(int n) {
+        playerNumber = n;
+    }
+
     class Dealer extends Player {
         public Dealer(String n) {
             super(n);
